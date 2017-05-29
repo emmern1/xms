@@ -1,10 +1,10 @@
-import React 		from 'react';
-import ReactDOM 	from 'react-dom';
+import React		from 'react';
+import ReactDOM		from 'react-dom';
 
-import theme		from './themes.css';
-import Who			from './Who';
-import Parallax		from './ParaLax';
-
+import theme			from './themes.css';
+import Who				from './Who';
+import Parallax			from './ParaLax';
+import Functionality	from './Functionality';
 
 
 
@@ -23,7 +23,10 @@ class App extends React.Component {
 					</h1>
 				</Parallax>
 				<Who theme1={theme.blue} theme2={theme.grey}/>
+				<Functionality theme={theme.grey}/>
 				<Blank/>
+				
+				
 			</div>);
 	}
 }
