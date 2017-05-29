@@ -1,0 +1,29 @@
+html, body {
+	height: 100%;
+}
+
+
+
+
+.container {
+	border: 1px solid black;
+	min-height: 10vh;
+	background-color: green;
+	position: relative;
+}
+.box {
+	height: 100%;
+	width: 100%;
+	
+	position: absolute;
+
+}
+
+.red {
+	background-color: red;
+	left: 20%;
+}
+
+.blue {
+	background-color: blue;
+}

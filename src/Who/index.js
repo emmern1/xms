@@ -1,12 +1,12 @@
-import React 	from 'react';
+import React	from 'react';
 
-import css 		from './style.css';
-import size 	from '../responsive.css';
+import css		from './style.css';
+import size		from '../responsive.css';
 
 class Section extends React.Component {
 	render() {
 		var width = window.innerWidth;
-		var after = width > 736 && this.props.flip;
+		var after = width > 736 && this.props.flip; // decides if the title will be displayed before (on mobile devices) or the right (on desktop)
 		var title = (<div className={css.title}>{this.props.title}</div>);
 		return (
 			<div className={css.section + ' ' + this.props.theme}>
