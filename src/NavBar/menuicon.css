@@ -1,0 +1,76 @@
+.menuIcon {
+	padding: 1px;
+	height: 17px;
+	width: 30px;
+	display: inline-block;
+	cursor: pointer;
+
+	
+	position: relative;
+	
+
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.menuIcon > div {
+	
+	height: 4px;
+	width: 100%;
+	background-color: black;
+	transition: all 0.3s ease; /*transform 0.3s ease, left 0.1s ease, opacity 0.3s ease;*/
+	position: absolute;
+	transform-origin: 0% 0%;
+	border-radius: 4px;
+	/*
+	margin-bottom: 4px;
+	
+	
+	
+	transform-origin: 4px 50%;
+	-webkit-transform-origin: 4px 50%;*/
+
+}
+
+.top {
+	transform: rotate(45deg) translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+
+}
+.top2 {
+	left: 50%;
+	top: 0%;
+	transform: translate(-50%, -50%);
+}
+
+.mid {
+	opacity: 0;
+	left: 500%;
+	top: 50%;
+	transition: left 0.5s ease, opacity 0.4s ease !important;
+}
+
+.mid2 {
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.bot {
+	transform: rotate(-45deg) translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+}
+
+.bot2 {
+	left: 50%;
+	top: 100%;
+	transform: translate(-50%, -50%);
+}
+
