@@ -1,0 +1,44 @@
+.icon {
+	font-size: 80px !important;
+	color: #666;
+	transition: color 0.2s ease;
+}
+
+
+.title {
+	margin-top: 4px;
+	text-transform: uppercase;
+	font-weight: 400;
+	transition: color 0.2s ease;
+
+}
+
+.description{
+	margin-top:3px;
+	color: #666;
+	transition: color 0.5s ease;
+}
+
+
+.infoChunk:hover .title,
+.infoChunk:hover .description,
+.infoChunk:hover .icon {
+	color:white;
+}
+
+.infoChunk:hover {
+	background-color: #0083ff;
+}
+
+.infoChunk {
+	vertical-align: top;
+	padding: 20px;
+	position: relative;
+	width: 220px;
+	display: inline-block;
+	/*border: 1px solid black;*/
+	border-radius: 1px;
+	text-align: center;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+}
