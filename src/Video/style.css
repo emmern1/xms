@@ -1,0 +1,18 @@
+
+
+
+.section {
+	/*background-color: rgb(246, 209, 189);*/ /*rgb(236 ,208,188) rgb(243, 199, 175);*/
+	padding: 20px;
+
+}
+
+.section video {
+	/*border: 1px solid black;*/
+	background-color: #333;
+	height: 300px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
