@@ -1,35 +1,45 @@
 import React		from 'react';
 import ReactDOM		from 'react-dom';
 
-import theme			from './themes.css';
-import Who				from './Who';
-import Parallax			from './ParaLax';
-import Functionality	from './Functionality';
-import NavBar			from './NavBar';
+import theme				from './themes.css';
+import size					from './responsive.css';
+
+import Parallax				from './ParaLax';
+import Video				from './Video';
+import Features				from './Features';
+import Functionality		from './Functionality';
+import Who					from './Who';
+
+import NavBar, {ScrollLink}	from './NavBar';
 
 
+
+//var aretha = "http://stargayzing.com/wp-content/uploads/2014/10/f1fe7d6e7224702e91786e5cb22be905.jpg";
 
 class App extends React.Component {
 	render() {
 		return (
 			<div>
 				<NavBar>
-					<a href="#f">functionality</a>
-					<a href="#w">who's it for</a>
+					<ScrollLink href="features">features</ScrollLink>
+					<ScrollLink href="functionality">functionality</ScrollLink>
+					<ScrollLink href="who">who's it for</ScrollLink>
 				</NavBar>
-				<Parallax src="http://stargayzing.com/wp-content/uploads/2014/10/f1fe7d6e7224702e91786e5cb22be905.jpg">
+				<Parallax 		id="top"	src="/assets/img/cover/2.jpg" >
 					<h1>
 						<img 
 							style={{height  : '100px'}}
 							src="assets/img/xmslogo.png" />
 						<br/>
-						Exhibition Management System
+						<span className={size.title}>Exhibition Management System</span>
 					</h1>
 				</Parallax>
-				<Who 			id="top" theme1={theme.blue} theme2={theme.grey}/>
-				<Functionality 	id="f" theme={theme.grey}/>
-				<Blank/>
-				<Parallax src="assets/img/cover/1.jpg" small={true} />
+				<Video 								theme={theme.blue}/>
+				<Features 		id="features"		theme={theme.grey}/>
+				<Parallax src="assets/img/cover/3.jpg" small={true} />
+				<Functionality 	id="functionality"  theme={theme.grey}/>
+				<Who 			id="who" 			theme1={theme.blue} theme2={theme.grey}/>
+				
 				<Blank />
 				
 				
@@ -40,7 +50,7 @@ class App extends React.Component {
 
 class Blank extends React.Component {
 	render() {
-		return <div style={{height: '100vh'}}></div>;
+		return <div style={{height: '100vh', backgroundColor: '#333'}}></div>;
 	}
 }
 

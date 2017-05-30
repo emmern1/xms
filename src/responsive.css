@@ -1,6 +1,17 @@
+.title {
+	font-weight: 200;
+	font-family: 'Lato', 'Gill Sans', 'Helvetica Neue', helvetica, arial;
+	text-transform: uppercase;
+	text-align: center;
+}
+.main {
+	font-weight: 300;
+}
+
+
 
 @media only screen and (max-width: 320px) {
-	h1 {
+	.title {
 		font-size: 35px;
 	}
 }
@@ -11,7 +22,7 @@
 		width: 100%;
 	}
 
-	h1 {
+	.title {
 		font-size: 45px;
 	}
 }
@@ -22,7 +33,7 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
-	h1 {
+	.title {
 		font-size: 60px;
 	}
 }
@@ -33,12 +44,12 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
-	h1 {
+	.title {
 		font-size: 65px;
 	}
 }
 
-
+/*
 .title {
 	font-size: 40px;
 	text-align: center;
@@ -46,4 +57,4 @@
 	font-weight: 200;
 	padding: 40px 0 40px 0;
 	background-color: green;
-}
+}*/
