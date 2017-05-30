@@ -2,7 +2,7 @@
 .navBar {
 	background-color: rgba(200, 200, 200, 0);
 	overflow: hidden;
-	z-index: 20000;
+	z-index: 200;
 	position: fixed !important;
 	width: 100%;
 	top: 0;
@@ -40,7 +40,7 @@
 	cursor: pointer;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 560px) {
 	.navBar {
 		height: 50px;
 		position: relative;
@@ -70,7 +70,7 @@
 	}
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 561px) {
 	.navBar {
 		height: 40px;
 	}

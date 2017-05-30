@@ -1,5 +1,4 @@
-import React				from 'react';
-//import {ScrollLink as Link} from '../components/NavBar';
+import React	from 'react';
 
 import css		from './style.css';
 import icon		from './menuicon.css';
@@ -30,7 +29,7 @@ class NavBar extends React.Component {
 				
 				<span className={css.left}>
 					<div className={css.logo}>
-						<ScrollLink href="top" duration={500}>
+						<ScrollLink href="top" duration={300}>
 							<img src="assets/img/xmslogo.png" />
 						</ScrollLink>
 					</div>
@@ -80,12 +79,12 @@ class MenuIcon extends React.Component {
 }
 
 
-class ScrollLink extends React.Component {
+export class ScrollLink extends React.Component {
 	constructor(props) {
 		super(props);
 		this.scroll   = this.scroll.bind(this);
 		this.scrollTo = this.scrollTo.bind(this);
-		this.duration = props.duration;
+		this.duration = props.duration ? props.duration : 200;
 		
 	}
 
