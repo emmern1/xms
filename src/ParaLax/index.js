@@ -7,7 +7,7 @@ class P extends React.Component{
 	render() {
 		var classList = [css.parallax, this.props.small ? css.small : null]
 		return (
-			<div className={css.container}>
+			<div id={this.props.id} className={css.container}>
 				<Parallax 
 					strength={200}
 					className={classList.join(' ')}
