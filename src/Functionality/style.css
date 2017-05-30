@@ -4,24 +4,6 @@
 	overflow: hidden;
 }
 
-.title {
-	text-align: center;
-	top: 40%;
-	position: relative;
-	font-weight: 200;
-	text-transform: uppercase;
-}
-
-
-.row2 {
-	position: relative;
-	text-align: center;
-}
-
-.row1 {
-	height: 33%;
-}
-
 
 .subtitle {
 	font-weight: 700;
