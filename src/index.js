@@ -31,7 +31,7 @@ class App extends React.Component {
 							style={{height  : '100px'}}
 							src="assets/img/xmslogo.png" />
 						<br/>
-						<span className={size.title}>Exhibition Management System</span>
+						<span className={size.title + ' ' + size.main}>Exhibition Management System</span>
 					</h1>
 				</Parallax>
 				<Video 								theme={theme.blue}/>
