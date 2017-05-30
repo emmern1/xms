@@ -10,6 +10,10 @@
 	transition: all 0.2s ease;
 }
 
+.navBar a:hover {
+	text-decoration: underline;
+}
+
 .left,
 .right {
 	display:block;
