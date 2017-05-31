@@ -4,13 +4,16 @@
 .section {
 	/*background-color: rgb(246, 209, 189);*/ /*rgb(236 ,208,188) rgb(243, 199, 175);*/
 	padding: 20px;
+	position: relative;
+
 
 }
 
 .section video {
 	/*border: 1px solid black;*/
+	max-width: 100%;
 	background-color: #333;
-	height: 300px;
+	max-height: 370px;
 	position: relative;
 	left: 50%;
 	transform: translateX(-50%);
