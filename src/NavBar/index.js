@@ -18,33 +18,33 @@ class NavBar extends React.Component {
 	toggle() {
 		this.setState({expanded: this.state.expanded == false});
 	}
-
+	test() {
+		alert('yo');
+	}
 	render() {
 		var classList = [
 							css.navBar,
 							this.state.expanded ? css.expanded : null
 						];
 		return (
-			<div className={classList.join(' ')}>
-				
-				<span className={css.left}>
-					<div className={css.logo}>
-						<ScrollLink href="top" duration={300}>
-							<img src="assets/img/xmslogo.png" />
-						</ScrollLink>
-					</div>
-				</span>
-				<span className={css.right}>
-					<MenuIcon onClick={this.toggle} clicked={this.state.expanded} className={css.menuIcon}/>
-					<div className={css.linksD}>
-						<div>
+
+			<div>
+				<ScrollLink href="top" duration={300}>
+					<img src="assets/img/xmslogo_w.png" className={css.logo}/>
+				</ScrollLink>		
+				<div className={classList.join(' ')}>
+					<span className={css.right}>
+						<MenuIcon onClick={this.toggle} clicked={this.state.expanded} className={css.menuIcon}/>
+						<div className={css.linksD}>
+							<div>
+								{this.props.children}
+							</div>
+						</div>
+					</span>
+					<div className={css.linksM}>
+						<div onClick={this.toggle}>
 							{this.props.children}
 						</div>
-					</div>
-				</span>
-				<div className={css.linksM}>
-					<div onClick={this.toggle}>
-						{this.props.children}
 					</div>
 				</div>
 			</div>
@@ -110,6 +110,7 @@ export class ScrollLink extends React.Component {
 
 	render() {
 		let href = this.props.href;
+		console.log("error:", href, this.props.children);
 		if (this.props.animated == false)
 			return (<a href={'#'+href}>{this.props.children}</a>);
 

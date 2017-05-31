@@ -8,6 +8,7 @@
 	top: 0;
 	left: 0;
 	transition: all 0.2s ease;
+
 }
 
 .navBar a:hover {
@@ -32,16 +33,14 @@
 }
 
 .logo {
-	height: 30px;
-	width: 30px;
-	/*background-color: grey;*/
-	display: inline-block;
-	margin: 0;
-}
-
-.logo img {
-	height: 100%;
+	height: 35px;
+	position: fixed;
+	top: 2px;
+	left: 5px;
+	mix-blend-mode: difference;
+	z-index: 201;
 	cursor: pointer;
+
 }
 
 @media only screen and (max-width: 560px) {
