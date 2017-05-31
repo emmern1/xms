@@ -10336,46 +10336,47 @@ var NavBar = function (_React$Component) {
 			this.setState({ expanded: this.state.expanded == false });
 		}
 	}, {
+		key: 'test',
+		value: function test() {
+			alert('yo');
+		}
+	}, {
 		key: 'render',
 		value: function render() {
 			var classList = [_style2.default.navBar, this.state.expanded ? _style2.default.expanded : null];
 			return _react2.default.createElement(
 				'div',
-				{ className: classList.join(' ') },
+				null,
 				_react2.default.createElement(
-					'span',
-					{ className: _style2.default.left },
-					_react2.default.createElement(
-						'div',
-						{ className: _style2.default.logo },
-						_react2.default.createElement(
-							ScrollLink,
-							{ href: 'top', duration: 300 },
-							_react2.default.createElement('img', { src: 'assets/img/xmslogo.png' })
-						)
-					)
-				),
-				_react2.default.createElement(
-					'span',
-					{ className: _style2.default.right },
-					_react2.default.createElement(MenuIcon, { onClick: this.toggle, clicked: this.state.expanded, className: _style2.default.menuIcon }),
-					_react2.default.createElement(
-						'div',
-						{ className: _style2.default.linksD },
-						_react2.default.createElement(
-							'div',
-							null,
-							this.props.children
-						)
-					)
+					ScrollLink,
+					{ href: 'top', duration: 300 },
+					_react2.default.createElement('img', { src: 'assets/img/xmslogo_w.png', className: _style2.default.logo })
 				),
 				_react2.default.createElement(
 					'div',
-					{ className: _style2.default.linksM },
+					{ className: classList.join(' ') },
+					_react2.default.createElement(
+						'span',
+						{ className: _style2.default.right },
+						_react2.default.createElement(MenuIcon, { onClick: this.toggle, clicked: this.state.expanded, className: _style2.default.menuIcon }),
+						_react2.default.createElement(
+							'div',
+							{ className: _style2.default.linksD },
+							_react2.default.createElement(
+								'div',
+								null,
+								this.props.children
+							)
+						)
+					),
 					_react2.default.createElement(
 						'div',
-						{ onClick: this.toggle },
-						this.props.children
+						{ className: _style2.default.linksM },
+						_react2.default.createElement(
+							'div',
+							{ onClick: this.toggle },
+							this.props.children
+						)
 					)
 				)
 			);
@@ -10461,6 +10462,7 @@ var ScrollLink = exports.ScrollLink = function (_React$Component3) {
 		key: 'render',
 		value: function render() {
 			var href = this.props.href;
+			console.log("error:", href, this.props.children);
 			if (this.props.animated == false) return _react2.default.createElement(
 				'a',
 				{ href: '#' + href },
@@ -10725,7 +10727,7 @@ exports.default = Who;
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"blue":"_2L8XDbYpbfME7MGs3tsE5d","grey":"EJ9oDA61xjf-2dKmSae1x"};
+module.exports = {"blue":"_2L8XDbYpbfME7MGs3tsE5d","grey":"EJ9oDA61xjf-2dKmSae1x","logo":"kEMSYPlCvCy8MGJB9ZrYa"};
 
 /***/ }),
 /* 91 */
@@ -10783,6 +10785,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+//import Test from './Test';
+
 
 //var aretha = "http://stargayzing.com/wp-content/uploads/2014/10/f1fe7d6e7224702e91786e5cb22be905.jpg";
 
