@@ -10832,12 +10832,8 @@ var App = function (_React$Component) {
 						'h1',
 						null,
 						_react2.default.createElement('img', {
-							style: {
-								height: '100px',
-								filter: 'invert(1)'
-
-							},
-							src: 'assets/img/xmslogo.png' }),
+							style: { height: '100px' },
+							src: 'assets/img/xmslogo_b.png' }),
 						_react2.default.createElement('br', null),
 						_react2.default.createElement(
 							'span',

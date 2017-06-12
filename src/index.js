@@ -24,16 +24,13 @@ class App extends React.Component {
 					<ScrollLink href="features">features</ScrollLink>
 					<ScrollLink href="functionality">functionality</ScrollLink>
 					<ScrollLink href="who">who's it for</ScrollLink>
+					<ScrollLink href="contact">contact</ScrollLink>
 				</NavBar>
 				<Parallax 		id="top"	src="assets/img/cover/4.jpg" >
 					<h1>
 						<img 
-							style={{
-								height  : '100px',
-								filter	: 'invert(1)',
-								
-						}}
-							src="assets/img/xmslogo.png" />
+							style={{height  : '100px'}}
+							src="assets/img/xmslogo_b.png" />
 						<br/>
 						<span className={size.title + ' ' + size.main}>Exhibition Management System</span>
 					</h1>
@@ -55,7 +52,7 @@ class App extends React.Component {
 class Contact extends React.Component {
 	render() {
 		return (
-			<div className={theme.contact}>
+			<div id="contact" className={theme.contact}>
 				<h1>To find out more about what XMS can do for you contact <a href='mailto:claire@getxms.com'>claire@getxms.com</a>
 				</h1>
 
