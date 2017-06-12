@@ -44,7 +44,7 @@ class App extends React.Component {
 				<Functionality 	id="functionality"  theme={theme.grey}/>
 				<Who 			id="who" 			theme1={theme.blue} theme2={theme.grey}/>
 				
-				<Blank />
+				<Contact />
 				
 				
 			</div>);
@@ -52,7 +52,7 @@ class App extends React.Component {
 }
 
 
-class Blank extends React.Component {
+class Contact extends React.Component {
 	render() {
 		return (
 			<div className={theme.contact}>
