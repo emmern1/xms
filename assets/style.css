@@ -17,6 +17,31 @@ body {
 
 .kEMSYPlCvCy8MGJB9ZrYa {
 	height: 300px !important;
+}
+
+
+._38p6bB8gEQXGYqCh_KsF7N {
+	height: 100vh;
+	background-color: #333;
+	color: white;
+	overflow: hidden;
+}
+
+._38p6bB8gEQXGYqCh_KsF7N > h1 {
+	position: relative;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-weight: 300;
+}
+
+._38p6bB8gEQXGYqCh_KsF7N > h1 > a {
+	color: #FF7898;/*#0083FF;/*#FF547C;*/
+	text-decoration: none;
+}
+._38p6bB8gEQXGYqCh_KsF7N > h1 > a:hover {
+	text-decoration: underline;
 }._3LtRL68lMcz8ocTgXRC7Aa {
 	font-weight: 200;
 	font-family: 'Lato', 'Gill Sans', 'Helvetica Neue', helvetica, arial;
@@ -25,6 +50,7 @@ body {
 }
 ._3KFrZsgK0QAuqbcAPLZVbh {
 	font-weight: 300;
+	color: black;
 }
 
 
@@ -153,8 +179,8 @@ body {
 
 }
 
-._38aiXtaPcYsmQN0uf_wMEl video {
-	/*border: 1px solid black;*/
+._38aiXtaPcYsmQN0uf_wMEl iframe {
+	border: 0;
 	max-width: 100%;
 	background-color: #333;
 	max-height: 370px;
@@ -239,7 +265,7 @@ body {
 
 
 ._3osBQHjB5dYIv7JozxxJnA:nth-child(1) {
-	padding-top: 35px; /* extra padding to take account for the fixed navbar */
+	padding-top: 15px; /* extra padding to take account for the fixed navbar */
 }
 ._3osBQHjB5dYIv7JozxxJnA:nth-child(2) {
 	padding-bottom: 15px;

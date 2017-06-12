@@ -10598,12 +10598,7 @@ var Video = function (_React$Component) {
 			return _react2.default.createElement(
 				'div',
 				{ className: _style2.default.section + ' ' + this.props.theme },
-				_react2.default.createElement(
-					'video',
-					{ controls: true },
-					_react2.default.createElement('source', { src: 'assets/XMS_V004.mp4', type: 'video/mp4' }),
-					'your browser...'
-				)
+				_react2.default.createElement('iframe', { src: 'https://player.vimeo.com/video/220469652', width: '640', height: '360', frameborder: '0', webkitallowfullscreen: true, mozallowfullscreen: true, allowfullscreen: true })
 			);
 		}
 	}]);
@@ -10727,7 +10722,7 @@ exports.default = Who;
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"blue":"_2L8XDbYpbfME7MGs3tsE5d","grey":"EJ9oDA61xjf-2dKmSae1x","logo":"kEMSYPlCvCy8MGJB9ZrYa"};
+module.exports = {"blue":"_2L8XDbYpbfME7MGs3tsE5d","grey":"EJ9oDA61xjf-2dKmSae1x","logo":"kEMSYPlCvCy8MGJB9ZrYa","contact":"_38p6bB8gEQXGYqCh_KsF7N"};
 
 /***/ }),
 /* 91 */
@@ -10823,16 +10818,25 @@ var App = function (_React$Component) {
 						_NavBar.ScrollLink,
 						{ href: 'who' },
 						'who\'s it for'
+					),
+					_react2.default.createElement(
+						_NavBar.ScrollLink,
+						{ href: 'contact' },
+						'contact'
 					)
 				),
 				_react2.default.createElement(
 					_ParaLax2.default,
-					{ id: 'top', src: 'assets/img/cover/2.jpg' },
+					{ id: 'top', src: 'assets/img/cover/4.jpg' },
 					_react2.default.createElement(
 						'h1',
 						null,
 						_react2.default.createElement('img', {
-							style: { height: '100px' },
+							style: {
+								height: '100px',
+								filter: 'invert(1)'
+
+							},
 							src: 'assets/img/xmslogo.png' }),
 						_react2.default.createElement('br', null),
 						_react2.default.createElement(
@@ -10844,10 +10848,10 @@ var App = function (_React$Component) {
 				),
 				_react2.default.createElement(_Video2.default, { theme: _themes2.default.blue }),
 				_react2.default.createElement(_Features2.default, { id: 'features', theme: _themes2.default.grey }),
-				_react2.default.createElement(_ParaLax2.default, { src: 'assets/img/cover/3.jpg', small: true }),
+				_react2.default.createElement(_ParaLax2.default, { src: 'assets/img/cover/3_copy_s.jpg', small: true }),
 				_react2.default.createElement(_Functionality2.default, { id: 'functionality', theme: _themes2.default.grey }),
 				_react2.default.createElement(_Who2.default, { id: 'who', theme1: _themes2.default.blue, theme2: _themes2.default.grey }),
-				_react2.default.createElement(Blank, null)
+				_react2.default.createElement(Contact, null)
 			);
 		}
 	}]);
@@ -10855,23 +10859,36 @@ var App = function (_React$Component) {
 	return App;
 }(_react2.default.Component);
 
-var Blank = function (_React$Component2) {
-	_inherits(Blank, _React$Component2);
+var Contact = function (_React$Component2) {
+	_inherits(Contact, _React$Component2);
 
-	function Blank() {
-		_classCallCheck(this, Blank);
+	function Contact() {
+		_classCallCheck(this, Contact);
 
-		return _possibleConstructorReturn(this, (Blank.__proto__ || Object.getPrototypeOf(Blank)).apply(this, arguments));
+		return _possibleConstructorReturn(this, (Contact.__proto__ || Object.getPrototypeOf(Contact)).apply(this, arguments));
 	}
 
-	_createClass(Blank, [{
+	_createClass(Contact, [{
 		key: 'render',
 		value: function render() {
-			return _react2.default.createElement('div', { style: { height: '100vh', backgroundColor: '#333' } });
+			return _react2.default.createElement(
+				'div',
+				{ id: 'contact', className: _themes2.default.contact },
+				_react2.default.createElement(
+					'h1',
+					null,
+					'To find out more about what XMS can do for you contact ',
+					_react2.default.createElement(
+						'a',
+						{ href: 'mailto:claire@getxms.com' },
+						'claire@getxms.com'
+					)
+				)
+			);
 		}
 	}]);
 
-	return Blank;
+	return Contact;
 }(_react2.default.Component);
 
 _reactDom2.default.render(_react2.default.createElement(App, null), document.getElementById('root'));
