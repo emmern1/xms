@@ -1,6 +1,6 @@
 
 .section:nth-child(1) {
-	padding-top: 35px; /* extra padding to take account for the fixed navbar */
+	padding-top: 15px; /* extra padding to take account for the fixed navbar */
 }
 .section:nth-child(2) {
 	padding-bottom: 15px;

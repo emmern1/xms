@@ -37,7 +37,7 @@ body {
 }
 
 .contact > h1 > a {
-	color: lightblue;
+	color: #FF7898;/*#0083FF;/*#FF547C;*/
 	text-decoration: none;
 }
 .contact > h1 > a:hover {

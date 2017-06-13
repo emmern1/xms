@@ -4,7 +4,7 @@
   "description": "xms-site",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --optimize-minimize",
+    "build": "webpack --optimize-minimize -p",
     "test": "webpack-dev-server --hot",
     "start": "npm run build & python -m SimpleHTTPServer 8080"
   },
