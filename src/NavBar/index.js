@@ -18,9 +18,6 @@ class NavBar extends React.Component {
 	toggle() {
 		this.setState({expanded: this.state.expanded == false});
 	}
-	test() {
-		alert('yo');
-	}
 	render() {
 		var classList = [
 							css.navBar,
@@ -110,7 +107,6 @@ export class ScrollLink extends React.Component {
 
 	render() {
 		let href = this.props.href;
-		console.log("error:", href, this.props.children);
 		if (this.props.animated == false)
 			return (<a href={'#'+href}>{this.props.children}</a>);
 
